@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#173b32">
+    <meta name="description" content="Descubre nuestra carta: cocina hecha con mimo, ingredientes de calidad y sabores para disfrutar.">
+    <title>Nuestra carta | Restaurante</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header class="cabecera">
+    <a class="marca" href="/" aria-label="Restaurante, inicio">
+        <span class="marca-icono" aria-hidden="true">R</span>
+        <span>RESTAURANTE</span>
+    </a>
+    <a class="enlace-admin" href="login.html">Acceso personal</a>
+</header>
+
+<div>
+    <section class="portada">
+        <div class="portada-contenido">
+            <p class="sobretitulo">COCINA CON SABOR</p>
+            <h1>Nuestra carta</h1>
+            <p class="portada-descripcion">Buenos ingredientes, recetas para compartir y momentos que se disfrutan sin prisa.</p>
+            <a class="boton-carta" href="#menu-categorias">Descubrir la carta <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="portada-sello" aria-hidden="true">
+            <span>HECHO</span>
+            <strong>con<br>gusto</strong>
+            <span>CADA DÍA</span>
+        </div>
+    </section>
+
+    <nav id="menu-categorias" class="menu-categorias" aria-label="Secciones de la carta"></nav>
+    <div id="estado-carta" class="estado-carta" role="status" aria-live="polite">Preparando nuestra carta…</div>
+    <main id="carta" class="carta"></main>
+</div>
+
+<footer class="pie">
+    <span class="pie-marca">RESTAURANTE</span>
+    <span>Una buena mesa siempre es una buena idea.</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
