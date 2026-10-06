@@ -1,6 +1,5 @@
 const express = require('express');
 const cors = require('cors');
-const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 const fs = require('fs');
 const bcrypt = require('bcrypt');
@@ -88,7 +87,7 @@ const db = postgresPool ? {
             .catch(callback);
     },
     run: postgresRun
-} : new sqlite3.Database(dbPath, err => {
+} : new (require('sqlite3').verbose().Database)(dbPath, err => {
     if (err) {
         console.error('❌ Error al conectar con la base de datos:', err.message);
     } else {
